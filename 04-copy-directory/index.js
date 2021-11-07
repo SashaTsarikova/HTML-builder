@@ -13,7 +13,6 @@ for (let filename of files) {
     function callback(err) {
         if (err) throw err;
       }
-      // destination.txt will be created or overwritten by default.
       fs.copyFile(path.join(__dirname,'files',filename), path.join(__dirname,'files-copy',filename), callback);
       }
 })
